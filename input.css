@@ -4,90 +4,90 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
-  
+
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #0e7490;
+  background: #0e7490;
 }
-  
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #22d3ee;
-    border-radius: 5px;
+  background: #22d3ee;
+  border-radius: 5px;
 }
-  
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
 
-#line{
-    stroke-dasharray: 708;
-    stroke-dashoffset: 708;
-    animation: line 3s ease;
-    animation-fill-mode: forwards;
+#line {
+  stroke-dasharray: 708;
+  stroke-dashoffset: 708;
+  animation: line 3s ease;
+  animation-fill-mode: forwards;
 }
 
-#botline{
-    stroke-dasharray: 708;
-    stroke-dashoffset: 708;
-    animation: line 3s ease;
-    animation-fill-mode: forwards;
+#botline {
+  stroke-dasharray: 708;
+  stroke-dashoffset: 708;
+  animation: line 3s ease;
+  animation-fill-mode: forwards;
 }
 
-@keyframes line{
-    to{
-        stroke-dashoffset: 0;
-    }
+@keyframes line {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
-#logo{
-    opacity: 100%;
-    animation: emerge 2s ease;
+#logo {
+  opacity: 100%;
+  animation: emerge 2s ease;
 }
 
-#greentriangle{
-    translate: 0 0;
-    opacity: 100%;
-    animation: movegreen 1.5s ease, emergegreen 1.5s ease;
+#greentriangle {
+  translate: 0 0;
+  opacity: 100%;
+  animation: movegreen 1.5s ease, emergegreen 1.5s ease;
 }
 
-#greytriangle{
-    translate: 0 0;
-    opacity: 100%;
-    animation: move 1s ease, emerge 1s ease;
+#greytriangle {
+  translate: 0 0;
+  opacity: 100%;
+  animation: move 1s ease, emerge 1s ease;
 }
 
-@keyframes move{
-    from{
-        translate: 0 -100px;
-    }
+@keyframes move {
+  from {
+    translate: 0 -100px;
+  }
 }
 
-@keyframes emerge{
-    from{
-        opacity: 0%;
-    }
+@keyframes emerge {
+  from {
+    opacity: 0%;
+  }
 }
 
-@keyframes movegreen{
-    from{
-        translate: 0 -100px;
-    }
-    
-    50%{
-        translate: 0 -100px;
-    }
+@keyframes movegreen {
+  from {
+    translate: 0 -100px;
+  }
+
+  50% {
+    translate: 0 -100px;
+  }
 }
 
-@keyframes emergegreen{
-    from{
-        opacity: 0%;
-    }
+@keyframes emergegreen {
+  from {
+    opacity: 0%;
+  }
 
-    50%{
-        opacity: 0%;
-    }
+  50% {
+    opacity: 0%;
+  }
 }

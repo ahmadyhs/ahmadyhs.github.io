@@ -1,251 +1,458 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahmad Yahya Salim's Portofolio</title>
-    <link href="./dist/output.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./images/amy.png">
-</head>
-<body>
-    <nav class="bg-cyan-700 fixed w-full flex justify-between sm:px-14 px-2 py-2 z-20">
-        <a href="#main" class="hover:scale-110 hover:ease-in-out hover:duration-300 ease-in-out duration-300">
-            <img alt="amaYa" src="./images/amy.png" class="h-10 w-10">
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./images/amy.png" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav
+      class="navbar fixed w-full flex justify-between sm:px-14 px-2 py-2 z-20 transition-colors ease-in-out duration-300 bg-opacity-90"
+    >
+      <a
+        href="#main"
+        class="hover:scale-110 hover:ease-in-out hover:duration-300 ease-in-out duration-300"
+      >
+        <img alt="amaYa" src="./images/amy.png" class="h-10 w-10" />
+      </a>
+
+      <div class="flex items-center gap-2">
+        <a
+          href="#about"
+          class="hidden sm:inline font-semibold text-white rounded-full py-2 sm:px-6 px-2 hover:bg-cyan-500 hover:ease-in-out hover:duration-300 ease-in-out duration-300"
+        >
+          About Me
         </a>
 
-        <div class="flex items-center gap-2">
-            <a href="#about" class="hidden sm:inline font-semibold text-white rounded-full py-2 sm:px-6 px-2 hover:bg-cyan-500 hover:ease-in-out hover:duration-300 ease-in-out duration-300">
-                About Me
-            </a>
-            
-            <a href="#tools" class="hidden sm:inline font-semibold text-white rounded-full py-2 sm:px-6 px-2 hover:bg-cyan-500 hover:ease-in-out hover:duration-300 ease-in-out duration-300">
-                Dev Tools
-            </a>
-            
-            <a href="#projects" class="hidden sm:inline font-semibold text-white rounded-full py-2 sm:px-6 px-2 hover:bg-cyan-500 hover:ease-in-out hover:duration-300 ease-in-out duration-300">
-                Projects
-            </a>
-        
-            <a href="#footer" class="font-semibold text-white rounded-full py-2 sm:px-6 px-2 hover:bg-cyan-500 hover:ease-in-out hover:duration-300 ease-in-out duration-300">
-                Contacts
-            </a>
-        </div>
+        <a
+          href="#tools"
+          class="hidden sm:inline font-semibold text-white rounded-full py-2 sm:px-6 px-2 hover:bg-cyan-500 hover:ease-in-out hover:duration-300 ease-in-out duration-300"
+        >
+          Dev Tools
+        </a>
+
+        <a
+          href="#projects"
+          class="hidden sm:inline font-semibold text-white rounded-full py-2 sm:px-6 px-2 hover:bg-cyan-500 hover:ease-in-out hover:duration-300 ease-in-out duration-300"
+        >
+          Projects
+        </a>
+
+        <a
+          href="#footer"
+          class="font-semibold text-white rounded-full py-2 sm:px-6 px-2 hover:bg-cyan-500 hover:ease-in-out hover:duration-300 ease-in-out duration-300"
+        >
+          Contacts
+        </a>
+      </div>
     </nav>
 
-    <section id="main" class="bg-cyan-900 sm:py-20 py-10 h-[100vh] flex flex-col items-center justify-center">
-        <div class="bg-white rounded-xl py-28 relative overflow-hidden">
-            <svg width="503" height="75" viewBox="0 0 503 75" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute z-0 top-4">
-                <path id="line" d="M1.5 73.5L73 2L144.5 73.5L216 2L287.5 73.5L359 2L430.5 73.5L502 2" stroke="#BA9C9C" stroke-width="2"/>
-            </svg>
+    <section
+      id="main"
+      class="bg-cyan-900 sm:py-20 py-10 h-[800px] flex flex-col items-center justify-center"
+    >
+      <div
+        id="thumbnail"
+        class="bg-white rounded-xl py-28 relative mx-3 lg:mx-0 overflow-hidden"
+      >
+        <svg
+          width="365"
+          height="175"
+          viewBox="0 0 365 175"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute -right-4 -top-4"
+        >
+          <path d="M364.5 0.5H0.5L364.5 175V0.5Z" fill="#FF8080" />
+        </svg>
 
-            <svg width="365" height="175" viewBox="0 0 365 175" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute -right-4 -top-4">
-                <path d="M364.5 0.5H0.5L364.5 175V0.5Z" fill="#FF8080"/>
-            </svg>
-                
+        <svg
+          width="503"
+          height="75"
+          viewBox="0 0 503 75"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute z-0 bottom-4 right-0 rotate-180"
+        >
+          <path
+            id="botline"
+            d="M1.5 73.5L73 2L144.5 73.5L216 2L287.5 73.5L359 2L430.5 73.5L502 2"
+            stroke="#BA9C9C"
+            stroke-width="2"
+          />
+        </svg>
 
-            <svg width="503" height="75" viewBox="0 0 503 75" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute z-0 bottom-4 right-0 rotate-180">
-                <path id="botline" d="M1.5 73.5L73 2L144.5 73.5L216 2L287.5 73.5L359 2L430.5 73.5L502 2" stroke="#BA9C9C" stroke-width="2"/>
-            </svg>
-            
-            <svg id="greytriangle" width="105" height="105" viewBox="0 0 135 135" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-4 left-4">
-                <path d="M0.598681 134.401L134.393 133.492L1.50819 0.606975L0.598681 134.401Z" fill="#666666"/>
-            </svg>
-            
-            <svg id="greentriangle" width="105" height="105" viewBox="0 0 135 135" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-8 left-8">
-                <path d="M0.598681 134.401L134.393 133.492L1.50819 0.606975L0.598681 134.401Z" fill="#A0DDDD"/>
-            </svg>    
+        <svg
+          id="greytriangle"
+          width="105"
+          height="105"
+          viewBox="0 0 135 135"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute bottom-4 left-4"
+        >
+          <path
+            d="M0.598681 134.401L134.393 133.492L1.50819 0.606975L0.598681 134.401Z"
+            fill="#666666"
+          />
+        </svg>
 
-            <div class="flex justify-center relative z-10">
-                <img id="logo" alt="amaYa" src="./images/amy.png" class="h-28 w-28 p-2 rounded-full bg-white border-8 border-cyan-200">
-            </div>
-            
-            <p class="text-black text-center font-extrabold text-4xl my-4">
-                Ahmad Yahya Salim
-            </p>
+        <svg
+          id="greentriangle"
+          width="105"
+          height="105"
+          viewBox="0 0 135 135"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute bottom-8 left-8"
+        >
+          <path
+            d="M0.598681 134.401L134.393 133.492L1.50819 0.606975L0.598681 134.401Z"
+            fill="#A0DDDD"
+          />
+        </svg>
 
-            <p class="text-black text-lg text-center md:px-60 px-10">
-                Web Development & Coding Enthusiast
-            </p>
-
-            <div class="flex justify-center">
-                <a href="https://github.com/ahmadyhs"
-                class="bg-black font-semibold md:px-16 px-10 py-4 my-4 rounded-lg ease-in-out duration-300 hover:ease-in-out hover:bg-cyan-500 hover:duration-300">
-                    <svg fill="white" height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default">
-                        <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
-                    </svg>
-                </a>
-            </div>
+        <div class="flex justify-center relative z-10">
+          <img
+            id="logo"
+            alt="amaYa"
+            src="./images/amy.png"
+            class="h-28 w-28 p-2 rounded-full bg-white border-8 border-cyan-200"
+          />
         </div>
+
+        <p class="text-black text-center mx-2 font-extrabold text-4xl my-4">
+          Ahmad Yahya Salim
+        </p>
+
+        <p class="text-black text-lg text-center md:px-60 px-10">
+          Web Development & Coding Enthusiast
+        </p>
+
+        <div class="flex justify-center">
+          <a
+            href="https://github.com/ahmadyhs"
+            class="bg-black font-semibold md:px-16 px-10 py-4 my-4 rounded-lg ease-in-out duration-300 hover:ease-in-out hover:bg-cyan-500 hover:duration-300"
+          >
+            <svg
+              fill="white"
+              height="32"
+              aria-hidden="true"
+              viewBox="0 0 16 16"
+              version="1.1"
+              width="32"
+              data-view-component="true"
+              class="octicon octicon-mark-github v-align-middle color-fg-default"
+            >
+              <path
+                d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section id="about" class="lg:flex lg:items-center lg:justify-evenly lg:px-40 px-10 py-10">
-        <div class="lg:w-4/12">
-            <img alt="abstract" src="./images/abstract.png" class="rounded-xl"/>
+    <section
+      id="about"
+      class="lg:flex lg:items-center lg:justify-evenly lg:px-40 px-10 py-10"
+    >
+      <div class="lg:w-4/12">
+        <img alt="abstract" src="./images/abstract.png" class="rounded-xl" />
+      </div>
+
+      <div class="lg:w-8/12 lg:ml-10">
+        <p class="text-cyan-700 text-2xl font-extrabold my-4">About Me</p>
+
+        <p class="text-lg text-justify">
+          An undergraduate Computer Science Student of Padjadjaran University
+          with interest on visual design and interface. Has a high curiosity to
+          understand about things that is been practicing on. Like to studying
+          on Web Development, mainly on the Frontend side.
+        </p>
+
+        <div class="flex items-center my-4">
+          <p class="text-navblue">Ahmad Yahya "amaYa" Salim</p>
         </div>
-
-        <div class="lg:w-8/12 lg:ml-10">
-            <p class="text-cyan-700 text-2xl font-extrabold my-4">
-                About Me
-            </p>
-
-            <p class="text-lg text-justify">
-                An undergraduate Computer Science Student of Padjadjaran University 
-                with interest on visual design and interface. Has a high curiosity 
-                to understand about things that is been practicing on. Like to studying 
-                on Web Development, mainly on the Frontend side.
-            </p>
-
-            <div class="flex items-center my-4">
-                <p class="text-navblue">
-                  Ahmad Yahya "amaYa" Salim
-                </p>
-            </div>
-        </div>
+      </div>
     </section>
 
     <section id="tools" class="bg-cyan-900 lg:px-52 md:px-40 px-10 py-20">
-        <p class="text-white text-4xl font-extrabold mb-6">
-            Dev Tools
-        </p>
+      <p class="text-white text-4xl font-extrabold mb-6">Dev Tools</p>
 
-        <p class="text-white text-lg text-justify">
-            These were the languages, frameworks, and utilities that i have been 
-            used in my experiences. Although i don't have and advance
-            understanding on those, i will keep exploring to escalate 
-            my knowledge upon them 
-        </p>
+      <p class="text-white text-lg text-justify">
+        These were the languages, frameworks, and utilities that i have been
+        used in my experiences. Although i don't have and advance understanding
+        on those, i will keep exploring to escalate my knowledge upon them
+      </p>
 
-        <div class="bg-slate-300 rounded-xl flex flex-wrap justify-center px-10 py-6 mt-10 my-6 hover:drop-shadow-xl gap-4">
-            <div class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200">
-                <img alt="css3" src="./images/css-3.svg" class="w-14 h-14 mx-auto object-contain">
-                <p class="text-center font-medium mt-2">
-                    CSS3
-                </p>
-            </div>
-
-            <div class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200">
-                <img alt="javascript" src="./images/js.png" class="w-14 h-14 mx-auto object-contain">
-                <p class="text-center font-medium mt-2">
-                    JavaScript
-                </p>
-            </div>
-
-            <div class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200">
-                <img alt="c++" src="./images/c++.png" class="w-14 h-14 mx-auto object-contain">
-                <p class="text-center font-medium mt-2">
-                    C++
-                </p>
-            </div>
-
-            <div class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200">
-                <img alt="python" src="./images/python.svg" class="w-14 h-14 mx-auto object-contain">
-                <p class="text-center font-medium mt-2">
-                    Python
-                </p>
-            </div>
-
-            <div class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200">
-                <img alt="java" src="./images/java.svg" class="w-14 h-14 mx-auto object-contain">
-                <p class="text-center font-medium mt-2">
-                    Java
-                </p>
-            </div>
-
-            <div class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200">
-                <svg class="w-14 h-14 mx-auto object-contain">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z" fill="#38bdf8"></path>
-                </svg>
-
-                <p class="text-center font-medium mt-2">
-                    Tailwind CSS
-                </p>
-            </div>
-
-            <div class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200">
-                <img alt="nextjs" src="./images/nextjs.png" class="w-14 h-14 mx-auto object-contain">
-
-                <p class="text-center font-medium mt-2">
-                    Next JS
-                </p>
-            </div>
-
-            <div class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200">
-                <img alt="mysql" src="./images/MySQL.png" class="w-14 h-14 mx-auto object-contain">
-
-                <p class="text-center font-medium mt-2">
-                    MySQL
-                </p>
-            </div>
+      <div
+        class="bg-slate-300 rounded-xl flex flex-wrap justify-center px-10 py-6 mt-10 my-6 hover:drop-shadow-xl gap-4"
+      >
+        <div
+          class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200"
+        >
+          <img
+            alt="css3"
+            src="./images/css-3.svg"
+            class="w-14 h-14 mx-auto object-contain"
+          />
+          <p class="text-center font-medium mt-2">CSS3</p>
         </div>
+
+        <div
+          class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200"
+        >
+          <img
+            alt="javascript"
+            src="./images/js.png"
+            class="w-14 h-14 mx-auto object-contain"
+          />
+          <p class="text-center font-medium mt-2">JavaScript</p>
+        </div>
+
+        <div
+          class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200"
+        >
+          <img
+            alt="typescript"
+            src="./images/ts.png"
+            class="w-14 h-14 mx-auto object-contain"
+          />
+          <p class="text-center font-medium mt-2">TypeScript</p>
+        </div>
+
+        <div
+          class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200"
+        >
+          <img
+            alt="c++"
+            src="./images/c++.png"
+            class="w-14 h-14 mx-auto object-contain"
+          />
+          <p class="text-center font-medium mt-2">C++</p>
+        </div>
+
+        <div
+          class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200"
+        >
+          <img
+            alt="python"
+            src="./images/python.svg"
+            class="w-14 h-14 mx-auto object-contain"
+          />
+          <p class="text-center font-medium mt-2">Python</p>
+        </div>
+
+        <div
+          class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200"
+        >
+          <img
+            alt="java"
+            src="./images/java.svg"
+            class="w-14 h-14 mx-auto object-contain"
+          />
+          <p class="text-center font-medium mt-2">Java</p>
+        </div>
+
+        <div
+          class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200"
+        >
+          <svg class="w-14 h-14 mx-auto object-contain">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z"
+              fill="#38bdf8"
+            ></path>
+          </svg>
+
+          <p class="text-center font-medium mt-2">Tailwind CSS</p>
+        </div>
+
+        <div
+          class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200"
+        >
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="-10.5 -9.45 21 18.9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-14 h-14 mx-auto object-contain"
+          >
+            <circle cx="0" cy="0" r="2" fill="#61dafb"></circle>
+            <g stroke="#61dafb" stroke-width="1" fill="none">
+              <ellipse rx="10" ry="4.5"></ellipse>
+              <ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse>
+              <ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse>
+            </g>
+          </svg>
+
+          <p class="text-center font-medium mt-2">React</p>
+        </div>
+
+        <div
+          class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200"
+        >
+          <img
+            alt="nextjs"
+            src="./images/nextjs.png"
+            class="w-14 h-14 mx-auto object-contain"
+          />
+
+          <p class="text-center font-medium mt-2">Next JS</p>
+        </div>
+
+        <div
+          class="shadow-lg bg-white rounded-xl w-32 h-fit p-4 hover:scale-110 hover:ease-in-out hover:duration-200 ease-in-out duration-200"
+        >
+          <img
+            alt="mysql"
+            src="./images/MySQL.png"
+            class="w-14 h-14 mx-auto object-contain"
+          />
+
+          <p class="text-center font-medium mt-2">MySQL</p>
+        </div>
+      </div>
     </section>
 
-    <section id="projects" class="grid md:px-40 px-10 py-20 lg:grid-cols-2 grid-cols-1 gap-8">
-        <p class="text-cyan-700 text-4xl font-extrabold lg:col-span-2 col-span-full">
-            My Projects
-        </p>
+    <section
+      id="projects"
+      class="grid md:px-40 px-10 py-20 lg:grid-cols-2 grid-cols-1 gap-8"
+    >
+      <p
+        class="text-cyan-700 text-4xl font-extrabold lg:col-span-2 col-span-full"
+      >
+        My Projects
+      </p>
 
-        <p class="text-cyan-700 text-lg text-justify lg:col-span-2 col-span-full">
-            Some of notable projects that i've involved in. 
-            These projects were coding related that i have done.
-        </p>
+      <p class="text-cyan-700 text-lg text-justify lg:col-span-2 col-span-full">
+        Some of notable projects that i've involved in. These projects were
+        coding related that i have done.
+      </p>
 
-        <div class="col-span-1">
-            <div class="overflow-hidden bg-cover hover:rounded-xl">
-                <img alt="project1" src="./images/proj1.png" class="rounded-xl hover:scale-110 hover:ease-in-out hover:duration-300 ease-in-out duration-300"/>
-            </div>
-            
-            <p class="font-bold my-3">
-                15 Puzzle (scalable) game
-            </p>
-            
-            <p class="text-gray-400">
-                Java
-            </p>
+      <div class="col-span-1">
+        <div class="overflow-hidden bg-cover hover:rounded-xl rounded-xl">
+          <img
+            alt="project1"
+            src="./images/proj1.png"
+            class="rounded-xl hover:scale-110 hover:ease-in-out hover:duration-300 ease-in-out duration-300"
+          />
         </div>
 
-        <div class="col-span-1">
-            <div class="overflow-hidden bg-cover hover:rounded-xl">
-                <img alt="project2" src="./images/proj2.png" class="rounded-xl hover:scale-110 hover:ease-in-out hover:duration-300 ease-in-out duration-300"/>
-            </div>
-            
-            <p class="font-bold my-3">
-                Spots coworking space renting site (Class Project)
-            </p>
-            
-            <p class="text-gray-400">
-                NextJS, Tailwind CSS, JavaScript
-            </p>
+        <p class="font-bold my-3">15 Puzzle (scalable) game</p>
+
+        <p class="text-gray-400">Java</p>
+      </div>
+
+      <div class="col-span-1">
+        <div class="overflow-hidden bg-cover hover:rounded-xl rounded-xl">
+          <img
+            alt="project2"
+            src="./images/proj2.png"
+            class="rounded-xl hover:scale-110 hover:ease-in-out hover:duration-300 ease-in-out duration-300"
+          />
         </div>
+
+        <p class="font-bold my-3">
+          Spots coworking space renting site (Class Project)
+        </p>
+
+        <p class="text-gray-400">NextJS, React, TypeScript, Tailwind CSS</p>
+      </div>
     </section>
 
     <footer id="footer" class="bottom-0 bg-cyan-700 w-full px-10 py-4">
-        <p class="flex justify-center text-white text-4xl font-bold md:col-span-3 col-span-full">
-            Contacts
-        </p>
+      <p
+        class="flex justify-center text-white text-4xl font-bold md:col-span-3 col-span-full"
+      >
+        Contacts
+      </p>
 
-        <div class="flex justify-center my-8 items-center gap-8">
-            <a href="mailto:ahmadyahyasalim@gmail.com" class="hover:scale-125 hover:ease-in-out hover:duration-200 ease-in-out duration-200">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="text-white-1 text-3xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#ffffff" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"></path>
-                </svg>
-            </a>
-            <a href="https://github.com/ahmadyhs" class="hover:scale-125 hover:ease-in-out hover:duration-200 ease-in-out duration-200">
-                <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default">
-                    <path fill="#ffffff" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
-                </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/ahmad-yahya-salim-0a87b6263/" class="hover:scale-125 hover:ease-in-out hover:duration-200 ease-in-out duration-200">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="text-white-1 text-3xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#ffffff" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
-                </svg>
-            </a>
-        </div>
+      <div class="flex justify-center my-8 items-center gap-8">
+        <a
+          href="mailto:ahmadyahyasalim@gmail.com"
+          class="hover:scale-125 hover:ease-in-out hover:duration-200 ease-in-out duration-200"
+        >
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            class="text-white-1 text-3xl"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#ffffff"
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://github.com/ahmadyhs"
+          class="hover:scale-125 hover:ease-in-out hover:duration-200 ease-in-out duration-200"
+        >
+          <svg
+            height="32"
+            aria-hidden="true"
+            viewBox="0 0 16 16"
+            version="1.1"
+            width="32"
+            data-view-component="true"
+            class="octicon octicon-mark-github v-align-middle color-fg-default"
+          >
+            <path
+              fill="#ffffff"
+              d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ahmad-yahya-salim-0a87b6263/"
+          class="hover:scale-125 hover:ease-in-out hover:duration-200 ease-in-out duration-200"
+        >
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            class="text-white-1 text-3xl"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#ffffff"
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+            ></path>
+          </svg>
+        </a>
+      </div>
 
-        <hr className="border-white"/>
+      <hr className="border-white" />
 
-        <p class="mt-4 text-white font-thin text-xs">
-            © 2023 Ahmad Yahya Salim
-        </p>
+      <p class="mt-4 text-white font-thin text-xs">© 2024 Ahmad Yahya Salim</p>
     </footer>
-</body>
+
+    <script>
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 56) {
+          $(".navbar").addClass("bg-cyan-700");
+        } else {
+          $(".navbar").removeClass("bg-cyan-700");
+        }
+      });
+    </script>
+  </body>
 </html>
